@@ -71,7 +71,7 @@ class ItemEnterEventListener(EventListener):
         else:
             filename = data[3:] # extract filename
             # Open File in Zathura
-            execcomand = "bash -c '" +command_to_execute+ " "+filename+ "; read'"
+            execcomand = "bash -c '" +command_to_execute+ " "+filename+ "; read &'"
             sub.call([terminal_name, terminal_command, execcomand])
 
             return RenderResultListAction([])
