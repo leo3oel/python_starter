@@ -1,0 +1,54 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Script Launcher",
+    "description": "Open a Script in a Terminal",
+    "developer_name": "Leonhard Schraut",
+    "icon": "images/icon.png",
+    "options": {
+      "query_debounce": 0.1
+    },
+    "preferences": [
+      {
+        "id": "py_kw",
+        "type": "keyword",
+        "name": "Start Keyword",
+        "description": "Keyword to open extension",
+        "default_value": "py"
+      },
+      {
+        "id": "filename",
+        "type": "text",
+        "name": "Filename",
+        "description": "Filename to look for",
+        "default_value": ".py"
+      },
+      {
+        "id": "start_path",
+        "type": "text",
+        "name": "Start Path",
+        "description": "Path to start script search; Input without '/' at the end e.g. /home",
+        "default_value": "~"
+      },
+      {
+        "id": "terminal_name",
+        "type": "text",
+        "name": "Terminal name",
+        "description": "Name of terminal",
+        "default_value": "xfce4-terminal"
+      },
+      {
+        "id": "terminal_command",
+        "type": "text",
+        "name": "execute command",
+        "description": "command to start a new a command in a new terminal window",
+        "default_value": "-e"
+      },
+      {
+        "id": "command_to_execute",
+        "type": "text",
+        "name": "command to execute",
+        "description": "command that will be execute before path",
+        "default_value": "python3"
+      }
+    ]
+}
